@@ -42,7 +42,7 @@ function TicTacToe() {
        getwinner(square);
     }
     const Cell=({num})=>{
-        return <td onClick={()=>handleclick(num)}>{matrix[num]}</td>
+        return <td onClick={()=>handleclick(num)} className="fonty">{matrix[num]}</td>
     }
     const resetGame=()=>{
         setFlag('X');
@@ -52,7 +52,7 @@ function TicTacToe() {
   return (
     <div className='container'>
         <Heading/>
-        <h3>It's {flag}'s TURN</h3>
+        <h3>Its {flag}'s Turn</h3>
       <table>
         <tbody>
       <tr>
@@ -72,7 +72,7 @@ function TicTacToe() {
       </tr>
       </tbody>
       </table>
-      <button onClick={resetGame} style={{backgroundColor:"#E0FFFF",marginTop:"1em",padding:"5px 2em",borderRadius:"5px"}}>RESET</button>
+      <button onClick={resetGame} style={{backgroundColor:"#E0FFFF",marginTop:"1em",padding:"5px 2em",borderRadius:"5px"}}className="fonty">RESET</button>
       {
       winner && (<h2 className='fonty'>'{winner}' is the winner!</h2>
       )}
