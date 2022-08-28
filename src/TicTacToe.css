@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table td{
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color:#E0FFFF;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+}
